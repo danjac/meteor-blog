@@ -1,0 +1,7 @@
+<template name="newPost">
+	<h1>Form for new post</h1>
+    {{> quickForm collection="Posts" 
+                  id="submitPostForm"
+                  type="method"
+                  meteormethod="submitPost"}}
+</template>
