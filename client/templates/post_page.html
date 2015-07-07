@@ -1,10 +1,10 @@
 <template name="postPage">
-    <h2>{{post.title}}</h2>
-    <p>{{post.body}}</p>
-    <p>by {{post.author}}</p>
+    <h2>{{title}}</h2>
+    <p>{{body}}</p>
+    <p>by {{author}}</p>
     {{#if canDelete}}
     <p>
-        {{#linkTo route="deletePost" id=post._id}}Delete this post{{/linkTo}}
+        <a href="#" id="deletePost">Delete this post</a>
     </p>
     {{/if}}
 </template>
