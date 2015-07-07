@@ -2,9 +2,10 @@
     <h2>{{title}}</h2>
     <p>{{body}}</p>
     <p>by {{author}}</p>
-    {{#if canDelete}}
-    <p>
-        <a href="#" id="deletePost">Delete this post</a>
-    </p>
+    {{#if isOwner}}
+    <div class="btn-group">
+        {{#linkTo route="editPost" class="btn btn-primary"}}Edit this post{{/linkTo}}
+        <a class="btn btn-danger" href="#" id="deletePost">Delete this post</a>
+    </div>
     {{/if}}
 </template>
