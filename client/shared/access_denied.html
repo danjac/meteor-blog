@@ -1,5 +1,9 @@
 <template name="accessDenied">
 	<div class="jumbotron text-center">
+        {{#if currentUser}}
+		<h2>You are not allowed to access this page</h2>
+        {{else}}
 		<h2>You have to log in first</h2>
+        {{/if}}
 	</div>
 </template>
