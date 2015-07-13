@@ -14,3 +14,5 @@ accounts-password
 ian:accounts-ui-bootstrap-3
 mrt:flash-messages
 raix:handlebar-helpers
+bootswatch:sandstone
+alethes:pages

@@ -1,7 +1,7 @@
 <template name="postPage">
     <h2>{{title}}</h2>
     <p>{{nl2br body}}</p>
-    <p>by {{author}}</p>
+    <p>by {{#linkTo route="user" _id=userId }}{{author}}{{/linkTo}}</p>
     {{#if isOwner}}
     <div class="btn-group">
         {{#linkTo route="editPost" class="btn btn-primary"}}Edit this post{{/linkTo}}
